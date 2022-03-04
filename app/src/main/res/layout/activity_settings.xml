@@ -1,0 +1,301 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.support.constraint.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".SettingsActivity">
+
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:paddingTop="20dp"
+            android:orientation="vertical"
+            android:paddingStart="5dp"
+            android:paddingEnd="5dp">
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:background="@color/colorLightPrimary"
+                android:paddingTop="5dp"
+                android:paddingBottom="5dp"
+                android:text="@string/pref_header_general"
+                android:textColor="@color/colorPrimaryDark"
+                android:textSize="14sp" />
+
+            <LinearLayout
+                android:id="@+id/settings_account_type"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:paddingTop="15dp"
+                android:paddingBottom="15dp"
+                android:background="?attr/selectableItemBackground"
+                android:orientation="horizontal">
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="0"
+                    android:drawableStart="@drawable/ic_person_black_24dp"
+                    android:paddingEnd="5dp" />
+
+                <TextView
+                    android:id="@+id/settings_account_type_text"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="2"
+
+                    android:paddingStart="5dp"
+                    android:textSize="15sp" />
+            </LinearLayout>
+
+            <TableRow
+                android:layout_width="match_parent"
+                android:layout_height="1dp"
+                android:paddingTop="3dp"
+                android:background="#e6e4e4">
+
+
+            </TableRow>
+
+            <LinearLayout
+                android:id="@+id/settings_account"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:paddingTop="15dp"
+                android:paddingBottom="15dp"
+                android:background="?attr/selectableItemBackground"
+                android:orientation="horizontal">
+
+                <TextView
+                    android:id="@+id/textView10"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="0"
+                    android:drawableStart="@drawable/ic_person_black_24dp"
+                    android:paddingEnd="5dp" />
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="2"
+
+                    android:paddingStart="5dp"
+                    android:text="@string/settings_account_details"
+                    android:textSize="15sp" />
+            </LinearLayout>
+
+            <TableRow
+                android:layout_width="match_parent"
+                android:layout_height="1dp"
+                android:paddingTop="3dp"
+                android:background="#e6e4e4">
+
+
+            </TableRow>
+
+
+            <LinearLayout
+                android:id="@+id/settings_logout"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:background="?attr/selectableItemBackground"
+                android:orientation="horizontal"
+                android:paddingTop="15dp"
+                android:paddingBottom="15dp">
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="0"
+                    android:drawableStart="@drawable/ic_power_settings_new_black_24dp"
+                    android:paddingEnd="5dp" />
+
+                <TextView
+
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="2"
+                    android:paddingStart="5dp"
+
+                    android:text="@string/settings_logout"
+                    android:textSize="15sp" />
+            </LinearLayout>
+
+            <TableRow
+                android:layout_width="match_parent"
+                android:layout_height="1dp"
+                android:paddingTop="3dp"
+                android:background="#e6e4e4">
+
+
+            </TableRow>
+
+
+            <TextView
+                android:id="@+id/seller_header"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:background="@color/colorLightPrimary"
+                android:paddingTop="5dp"
+                android:paddingBottom="5dp"
+                android:text="@string/sellers_title"
+                android:textColor="@color/colorPrimaryDark"
+                android:textSize="14sp" />
+
+            <!--<LinearLayout-->
+                <!--android:id="@+id/settings_subscription"-->
+                <!--android:background="?attr/selectableItemBackground"-->
+                <!--android:layout_width="match_parent"-->
+                <!--android:layout_height="match_parent"-->
+                <!--android:paddingTop="15dp"-->
+                <!--android:paddingBottom="15dp"-->
+                <!--android:orientation="horizontal">-->
+
+                <!--<TextView-->
+                    <!--android:layout_width="wrap_content"-->
+                    <!--android:layout_height="wrap_content"-->
+                    <!--android:layout_weight="0"-->
+                    <!--android:drawableStart="@drawable/ic_sync_black_24dp"-->
+                    <!--android:paddingEnd="5dp" />-->
+
+                <!--<TextView-->
+                    <!--android:id="@+id/subscription_text"-->
+                    <!--android:layout_width="wrap_content"-->
+                    <!--android:layout_height="wrap_content"-->
+                    <!--android:layout_weight="2"-->
+
+                    <!--android:paddingStart="5dp"-->
+                    <!--android:text="@string/settings_subscription"-->
+                    <!--android:textSize="15sp" />-->
+            <!--</LinearLayout>-->
+
+            <TableRow
+                android:layout_width="match_parent"
+                android:layout_height="1dp"
+                android:paddingTop="3dp"
+                android:background="#e6e4e4">
+
+
+            </TableRow>
+
+            <LinearLayout
+                android:id="@+id/settings_verification"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:paddingTop="15dp"
+                android:paddingBottom="15dp"
+                android:background="?attr/selectableItemBackground"
+                android:orientation="horizontal">
+
+                <TextView
+                    android:id="@+id/verification_drawable"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="0"
+                    android:drawableStart="@drawable/ic_done_all_brown_24dp"
+                    android:paddingEnd="5dp" />
+
+                <TextView
+
+                    android:id="@+id/verification_text"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="2"
+
+                    android:paddingStart="5dp"
+                    android:text="@string/settings_Verification"
+                    android:textSize="15sp" />
+            </LinearLayout>
+
+            <TableRow
+                android:layout_width="match_parent"
+                android:layout_height="1dp"
+                android:paddingTop="3dp"
+                android:background="#e6e4e4">
+
+
+            </TableRow>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:paddingTop="15dp"
+                android:paddingBottom="15dp"
+                android:id="@+id/settings_reply_history"
+                android:background="?attr/selectableItemBackground"
+                android:orientation="horizontal">
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="0"
+                    android:drawableStart="@drawable/ic_access_time_black_24dp"
+                    android:paddingEnd="5dp" />
+
+                <TextView
+
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="2"
+                    android:paddingStart="5dp"
+
+                    android:text="@string/reply_history"
+                    android:textSize="15sp" />
+            </LinearLayout>
+
+            <TableRow
+                android:layout_width="match_parent"
+                android:layout_height="1dp"
+                android:paddingTop="3dp"
+                android:background="#e6e4e4">
+
+
+            </TableRow>
+
+            <LinearLayout
+                android:id="@+id/settings_seller_settings"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:paddingTop="15dp"
+                android:paddingBottom="15dp"
+                android:background="?attr/selectableItemBackground"
+                android:orientation="horizontal">
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="0"
+                    android:drawableStart="@drawable/ic_settings_brown_24dp"
+                    android:paddingEnd="5dp" />
+
+                <TextView
+
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="2"
+
+                    android:paddingStart="5dp"
+                    android:text="@string/seller_settings"
+                    android:textSize="15sp" />
+            </LinearLayout>
+
+            <TableRow
+                android:layout_width="match_parent"
+                android:layout_height="1dp"
+                android:paddingTop="3dp"
+                android:background="#e6e4e4">
+
+
+            </TableRow>
+
+
+
+        </LinearLayout>
+    </ScrollView>
+</android.support.constraint.ConstraintLayout>

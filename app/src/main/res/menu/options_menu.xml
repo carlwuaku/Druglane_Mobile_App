@@ -1,0 +1,25 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto">
+
+    <item
+        android:id="@+id/delete_all"
+        android:title="@string/delete_all" />
+    <item
+        android:id="@+id/block_all"
+        android:title="@string/block_all" />
+    <item
+        android:id="@+id/account"
+        android:title="@string/account" />
+    <item
+        android:id="@+id/action_seller_settings"
+        android:icon="@drawable/ic_settings_black_24dp"
+        android:title="@string/seller_settings"
+        app:showAsAction="never" />
+    <item
+        android:id="@+id/action_reply_history"
+        android:title="@string/reply_history"
+        app:showAsAction="never" />
+
+
+</menu>

@@ -1,0 +1,137 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+
+<!--<android.support.constraint.ConstraintLayout android:layout_width="match_parent"-->
+    <!--android:layout_height="match_parent"-->
+    <!--xmlns:android="http://schemas.android.com/apk/res/android"-->
+    <!--xmlns:app="http://schemas.android.com/apk/res-auto"-->
+    <!--xmlns:tools="http://schemas.android.com/tools">-->
+
+    <!--<TextView-->
+        <!--android:id="@+id/no_items"-->
+        <!--android:layout_width="match_parent"-->
+        <!--android:layout_height="wrap_content"-->
+        <!--android:layout_marginBottom="4dp"-->
+        <!--android:text="@string/no_items_1"-->
+        <!--android:padding="8dp"-->
+        <!--android:textAlignment="center"-->
+        <!--android:textSize="16sp" />-->
+
+        <!--<android.support.v7.widget.RecyclerView-->
+            <!--android:id="@+id/messagelist"-->
+            <!--android:layout_width="match_parent"-->
+            <!--android:layout_height="wrap_content"-->
+            <!--android:layout_marginTop="1dp"-->
+            <!--android:layout_weight="3"-->
+            <!--android:scrollbars="vertical"-->
+            <!--app:layout_constraintTop_toTopOf="parent"-->
+            <!--tools:listitem="@layout/messages_recyclerview_layout" >-->
+
+        <!--</android.support.v7.widget.RecyclerView>-->
+
+
+    <!--</android.support.constraint.ConstraintLayout>-->
+
+<!--<LinearLayout android:weightSum="3"-->
+    <!--android:orientation="vertical"-->
+    <!--android:layout_width="match_parent"-->
+    <!--android:layout_height="match_parent"-->
+    <!--xmlns:android="http://schemas.android.com/apk/res/android">-->
+
+    <!--<View-->
+    <!--android:layout_marginTop="5mm"-->
+    <!--android:id="@+id/separator"-->
+    <!--android:layout_width="match_parent"-->
+    <!--android:layout_height="1dp"-->
+    <!--android:background="@android:color/darker_gray"/>-->
+
+    <!--<LinearLayout-->
+    <!--android:weightSum="3"-->
+    <!--android:orientation="horizontal"-->
+    <!--android:layout_width="match_parent"-->
+    <!--android:layout_height="wrap_content">-->
+
+    <!--<EditText-->
+    <!--android:id="@+id/message"-->
+    <!--android:layout_weight="3"-->
+    <!--android:layout_width="wrap_content"-->
+    <!--android:hint="your message"-->
+    <!--android:layout_height="match_parent" />-->
+
+    <!--<Button-->
+
+    <!--android:id="@+id/send"-->
+    <!--android:layout_width="wrap_content"-->
+    <!--android:layout_height="wrap_content"-->
+    <!--android:background="#00000000"-->
+    <!--android:text="send" />-->
+    <!--</LinearLayout>-->
+
+    <!--</LinearLayout>-->
+
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:orientation="vertical"
+    android:clipToPadding="false"
+    android:focusableInTouchMode="true">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="#EBE2F9"
+        android:orientation="horizontal"
+        android:paddingStart="5dp"
+        android:paddingTop="8dp"
+        android:paddingEnd="5dp"
+        android:paddingBottom="5dp">
+
+        <EditText
+            android:id="@+id/home_input"
+            android:layout_width="match_parent"
+            android:layout_height="40dp"
+            android:layout_weight="2"
+            android:background="@drawable/rounded_border"
+            android:drawableStart="@drawable/ic_search_black_24dp"
+            android:elevation="2dp"
+            android:ems="10"
+            android:hint="Enter name of item..."
+            android:imeOptions="actionSearch"
+            android:inputType="text"
+            android:paddingHorizontal="10dp"
+            android:text=""
+            android:textSize="15sp" />
+
+        <ImageButton
+            android:id="@+id/home_send_btn"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            android:layout_marginHorizontal="10dp"
+            android:background="@drawable/ic_send_black_24dp"
+
+            android:padding="20dp"
+            android:scaleType="fitCenter" />
+    </LinearLayout>
+
+    <TextView
+        android:id="@+id/no_items"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginBottom="4dp"
+        android:text="@string/no_items_1"
+        android:padding="8dp"
+        android:textAlignment="center"
+        android:textSize="16sp" />
+
+    <android.support.v7.widget.RecyclerView
+        android:id="@+id/messagelist"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_weight="2"
+
+        tools:listitem="@layout/messages_recyclerview_layout" ></android.support.v7.widget.RecyclerView>
+
+</LinearLayout>

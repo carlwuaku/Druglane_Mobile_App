@@ -1,0 +1,55 @@
+{
+  "project_info": {
+    "project_number": "142421833341",
+    "firebase_url": "https://thedruglane-c15d8.firebaseio.com",
+    "project_id": "thedruglane-c15d8",
+    "storage_bucket": "thedruglane-c15d8.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:142421833341:android:d9faa03a22e07d80",
+        "android_client_info": {
+          "package_name": "com.druglane"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "142421833341-lq8kd1hag631cpvhe0689je816kdmpub.apps.googleusercontent.com",
+          "client_type": 1,
+          "android_info": {
+            "package_name": "com.druglane",
+            "certificate_hash": "4c76ff5ff8697c9a15163dda106a16c901b97fce"
+          }
+        },
+        {
+          "client_id": "142421833341-2pjk1jg2760hdl4bklgn975nn6q21lv0.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyBRgkh7Ntake8QOlft8zm-qWNex_O7Y4uI"
+        }
+      ],
+      "services": {
+        "analytics_service": {
+          "status": 1
+        },
+        "appinvite_service": {
+          "status": 2,
+          "other_platform_oauth_client": [
+            {
+              "client_id": "142421833341-2pjk1jg2760hdl4bklgn975nn6q21lv0.apps.googleusercontent.com",
+              "client_type": 3
+            }
+          ]
+        },
+        "ads_service": {
+          "status": 2
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}

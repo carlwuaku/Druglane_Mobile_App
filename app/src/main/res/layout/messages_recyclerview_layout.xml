@@ -1,0 +1,128 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/root_view"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:orientation="vertical"
+    android:paddingLeft="5dp"
+    android:background="?android:attr/selectableItemBackground"
+    android:paddingTop="12dp"
+    android:paddingRight="5dp">
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+        <TextView
+            android:id="@+id/message"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentLeft="true"
+            android:textSize="16sp" />
+
+
+
+        <TextView
+            android:id="@+id/num_unread"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentRight="true"
+            android:background="@drawable/rounded_blue_bg"
+            android:textColor="@color/colorWhite"
+            android:textSize="10sp" />
+    </RelativeLayout>
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_marginBottom="6dp">
+
+        <TextView
+            android:id="@+id/status_pending"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentLeft="true"
+            android:layout_marginTop="5dp"
+            android:layout_marginEnd="5dp"
+            android:layout_weight="1"
+            android:textSize="8sp" />
+
+        <TextView
+            android:id="@+id/status_done"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentLeft="true"
+            android:layout_marginTop="5dp"
+            android:layout_marginEnd="5dp"
+            android:layout_weight="1"
+            android:drawableStart="@drawable/ic_done_all_black_18dp"
+            android:textSize="8sp" />
+
+        <TextView
+            android:id="@+id/m_view_image_btn"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentRight="false"
+            android:layout_marginTop="5dp"
+            android:layout_marginEnd="15dp"
+            android:layout_toLeftOf="@+id/view_replies_btn"
+            android:layout_weight="1"
+            android:drawableStart="@drawable/ic_attachment_brown_24dp"
+            android:textColor="@color/colorBrown" />
+
+        <TextView
+            android:id="@+id/item_blocked"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentRight="false"
+            android:layout_marginTop="5dp"
+            android:layout_marginEnd="15dp"
+            android:layout_toLeftOf="@+id/m_view_image_btn"
+            android:layout_weight="1"
+            android:drawableStart="@drawable/ic_lock_black_24dp"
+            android:textColor="@color/colorBrown" />
+
+        <TextView
+            android:id="@+id/view_replies_btn"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentRight="true"
+            android:layout_marginTop="5dp"
+            android:layout_marginBottom="5dp"
+            android:layout_weight="1"
+            android:drawableStart="@drawable/ic_comment_brown_24dp"
+            android:textColor="@color/colorBrown" />
+    </RelativeLayout>
+
+
+    <TextView
+        android:id="@+id/dateView"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:drawableStart="@drawable/ic_timer_brown_18dp"
+        android:text="n/a" />
+
+    <TableRow
+        android:id="@+id/hr"
+        android:layout_width="match_parent"
+        android:layout_height="1dp"
+        android:layout_marginTop="3dp"
+        android:background="#e6e4e4">
+
+
+    </TableRow>
+
+    <!--<TextView-->
+    <!--android:id="@+id/reply_count"-->
+    <!--android:layout_width="match_parent"-->
+    <!--android:layout_height="wrap_content"-->
+    <!--android:paddingTop="0dp"-->
+    <!--android:paddingBottom="0dp"-->
+    <!--android:textSize="14sp"-->
+    <!--android:textStyle="italic" />-->
+
+
+</LinearLayout>
